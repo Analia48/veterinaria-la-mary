@@ -16,4 +16,5 @@ El proyecto cuenta con las siguientes páginas:
 
 - Inicio
 - Información Institucional
+- Servicios
 - Contacto

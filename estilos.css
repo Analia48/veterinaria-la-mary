@@ -1,4 +1,5 @@
 /* Estilos generales */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,6 +8,7 @@ body {
 }
 
 /* Encabezado */
+
 header {
     background-color: #2f7d6d;
     color: white;
@@ -19,6 +21,7 @@ header h1 {
 }
 
 /* Menú de navegación */
+
 nav a {
     color: white;
     text-decoration: none;
@@ -31,6 +34,7 @@ nav a:hover {
 }
 
 /* Contenido principal */
+
 main {
     max-width: 900px;
     margin: 40px auto;
@@ -44,10 +48,46 @@ main h2 {
 }
 
 /* Pie de página */
+
 footer {
     background-color: #245f54;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 50px;
+}
+/* Botones de servicios */
+
+.servicios-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.servicios-menu button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2f7d6d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.servicios-menu button:hover {
+    background-color: #245f54;
+}
+
+ /* Información del servicio */
+
+#informacion-servicio {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f8f7;
+    border-radius: 8px;
+}
+
+#informacion-servicio h3 {
+    color: #2f7d6d;
 }
