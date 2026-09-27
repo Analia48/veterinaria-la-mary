@@ -1,93 +1,353 @@
-/* Estilos generales */
+ /* =========================================
+    ESTILOS GENERALES
+ ========================================= */
 
 body {
+
     margin: 0;
+
     font-family: Arial, sans-serif;
+
     background-color: #f4f8f7;
+
     color: #333;
+
 }
 
-/* Encabezado */
+
+/* =========================================
+   ENCABEZADO
+========================================= */
 
 header {
+
     background-color: #2f7d6d;
+
     color: white;
-    padding: 20px;
+
     text-align: center;
+
 }
 
-header h1 {
-    margin: 0 0 15px;
-}
 
-/* Menú de navegación */
+/* =========================================
+   MENÚ DE NAVEGACIÓN
+========================================= */
 
 nav a {
+
     color: white;
+
     text-decoration: none;
+
     margin: 0 15px;
+
     font-weight: bold;
+
 }
 
 nav a:hover {
+
     text-decoration: underline;
+
 }
 
-/* Contenido principal */
+
+/* Bootstrap Navbar */
+
+.navbar {
+
+    background-color: #2f7d6d !important;
+
+}
+
+.navbar-brand {
+
+    color: white !important;
+
+}
+
+.navbar .nav-link {
+
+    color: white !important;
+
+    font-weight: bold;
+
+}
+
+.navbar .nav-link:hover {
+
+    color: #d9f0eb !important;
+
+}
+
+.navbar .nav-link.active {
+
+    text-decoration: underline;
+
+}
+
+.navbar-toggler {
+
+    background-color: white;
+
+}
+
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+========================================= */
 
 main {
+
     max-width: 900px;
+
     margin: 40px auto;
+
     padding: 30px;
+
     background-color: white;
+
     border-radius: 10px;
+
 }
 
+main h1,
 main h2 {
+
     color: #2f7d6d;
+
 }
 
-/* Pie de página */
 
-footer {
-    background-color: #245f54;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 50px;
+/* =========================================
+   CARDS DE BOOTSTRAP
+========================================= */
+
+.card {
+
+    border: none;
+
+    border-radius: 10px;
+
 }
-/* Botones de servicios */
+
+.card-title {
+
+    color: #2f7d6d;
+
+}
+
+.card-text {
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
 
 .servicios-menu {
+
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 15px;
+
     margin-top: 25px;
+
 }
 
 .servicios-menu button {
+
     padding: 12px 20px;
+
     border: none;
+
     border-radius: 8px;
+
     background-color: #2f7d6d;
+
     color: white;
+
     font-size: 16px;
+
     cursor: pointer;
+
 }
 
 .servicios-menu button:hover {
+
     background-color: #245f54;
+
 }
 
- /* Información del servicio */
+
+/* Botones Bootstrap */
+
+.btn-primary {
+
+    background-color: #2f7d6d;
+
+    border-color: #2f7d6d;
+
+}
+
+.btn-primary:hover {
+
+    background-color: #245f54;
+
+    border-color: #245f54;
+
+}
+
+
+/* =========================================
+   INFORMACIÓN DEL SERVICIO
+========================================= */
 
 #informacion-servicio {
+
     margin-top: 30px;
+
     padding: 20px;
+
     background-color: #f4f8f7;
+
     border-radius: 8px;
+
 }
 
 #informacion-servicio h3 {
+
     color: #2f7d6d;
+
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
+
+footer {
+
+    background-color: #245f54 !important;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 50px;
+
+}
+
+
+/* =========================================
+   BREAKPOINT 1 - CELULARES
+   Menos de 576px
+========================================= */
+
+@media (max-width: 575px) {
+
+    main {
+
+        margin: 20px 10px;
+
+        padding: 20px;
+
+    }
+
+    main h1 {
+
+        font-size: 28px;
+
+    }
+
+    main h2 {
+
+        font-size: 24px;
+
+    }
+
+    .servicios-menu {
+
+        flex-direction: column;
+
+    }
+
+    .servicios-menu button {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =========================================
+   BREAKPOINT 2 - TABLETS
+   Desde 576px
+========================================= */
+
+@media (min-width: 576px) {
+
+    main {
+
+        margin: 30px auto;
+
+        padding: 25px;
+
+    }
+
+}
+
+
+/* =========================================
+   BREAKPOINT 3 - COMPUTADORAS
+   Desde 992px
+========================================= */
+
+@media (min-width: 992px) {
+
+    main {
+
+        margin: 40px auto;
+
+        padding: 30px;
+
+    }
+
+    .card {
+
+        transition: transform 0.2s ease;
+
+    }
+
+    .card:hover {
+
+        transform: translateY(-5px);
+
+    }
+
+}
+
+
+/* =========================================
+   PANTALLAS GRANDES
+   Desde 1200px
+========================================= */
+
+@media (min-width: 1200px) {
+
+    main {
+
+        max-width: 1100px;
+
+    }
+
 }

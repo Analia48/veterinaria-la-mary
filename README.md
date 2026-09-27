@@ -4,7 +4,7 @@
 
 - Gonzalez Gongora, Melina Daiana
 - Barrio, Maria Haydee
-- Cristaldo, Cristian ebastian
+- Cristaldo, Cristian Sebastian
 - Meza, Gaston Alejandro
 - Gongora, Analia Lujan
 
@@ -17,4 +17,6 @@ El proyecto cuenta con las siguientes páginas:
 - Inicio
 - Información Institucional
 - Servicios
+- Mascostas
+- Veterinarios
 - Contacto
