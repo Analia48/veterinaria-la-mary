@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión - Veterinaria La Mary</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="comun.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light bg-light no-imprimir">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Veterinaria La Mary</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto" id="menuNavegacion"></ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container py-5">
+            <h1 class="text-center mb-4">Iniciar sesión</h1>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h2 class="text-center mb-4">Acceso de administradores</h2>
+
+                            <div id="sesionActiva" class="d-none text-center">
+                                <p>Ya iniciaste sesión.</p>
+                                <a href="turnos.html" class="btn btn-primary">Ir al panel de administración</a>
+                            </div>
+
+                            <form id="formLogin" novalidate>
+                                <div class="mb-3">
+                                    <label for="usuario" class="form-label">Usuario</label>
+                                    <input type="text" id="usuario" class="form-control" autocomplete="username" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="clave" class="form-label">Contraseña</label>
+                                    <input type="password" id="clave" class="form-control" autocomplete="current-password" required>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" id="botonIngresar" class="btn btn-primary">Ingresar</button>
+                                </div>
+
+                                <div id="mensajeLogin" class="d-none" role="alert" aria-live="polite"></div>
+                            </form>
+
+                            <p class="text-center mt-4 mb-0">
+                                ¿No tenés cuenta? <a href="registro.html">Registrate</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-3 no-imprimir">
+        <p class="mb-0">© 2026 Veterinaria La Mary</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="login.js"></script>
+</body>
+</html>
